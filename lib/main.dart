@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz/classes/Question.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,6 +44,13 @@ class _QuizPageState extends State<QuizPage> {
   ];
   List<bool> answers = [true, false, false, true];
   int questionNumber = 0;
+
+  List<Question> qu = [
+    Question('question 1', true),
+    Question('question 2', false),
+    Question('question 3', false),
+    Question('question 4', true),
+  ];
 
   @override
   Widget build(BuildContext context) {
